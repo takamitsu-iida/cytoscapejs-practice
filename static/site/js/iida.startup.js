@@ -39,7 +39,7 @@
 
       style: [
         {
-          selector: 'node',
+          selector: 'nodes',
           style: {
             'label': 'data(id)'
           }
