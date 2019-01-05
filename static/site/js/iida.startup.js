@@ -51,6 +51,16 @@
             'height': 8,
             'label': ''
           }
+        },
+        {
+          selector: 'edge',
+          style: {
+            'curve-style': 'bezier',
+            'width': 6,
+            'target-arrow-shape': 'triangle',
+            'line-color': '#ffaaaa',
+            'target-arrow-color': '#ffaaaa'
+          }
         }
       ],
 

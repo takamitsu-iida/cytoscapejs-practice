@@ -67,13 +67,3 @@ h1 {
   right: 0;
   z-index: 999;
 }
-
-/* cytoscape.js node, edge */
-
-edge {
-  width: 6;
-  curve-style: bezier;
-  target-arrow-shape: triangle;
-  line-color: #ffaaaa;
-  target-arrow-color: #ffaaaa;
-}
