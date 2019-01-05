@@ -125,7 +125,7 @@
     eAndF.makeLayout({
       name: 'grid',
       boundingBox: { x1: 0, x2: 300, y1: 300, y2: 400 },
-      cols: 2,
+      cols: 4,
       fit: false
     }).run();
 
