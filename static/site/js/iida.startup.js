@@ -64,7 +64,7 @@
         }
       ],
 
-      elements: [
+      __elements: [
         { data: { id: 'a' } },
         { data: { id: 'b' } },
         { data: { id: 'c' } },
@@ -86,7 +86,38 @@
         { data: { source: 'h', target: 'i' } },
 
         { data: { id: 'j' } },
-      ]
+      ],
+
+      elements: {
+        nodes: [
+          { data: { id: 'a' } },
+          { data: { id: 'b' } },
+          { data: { id: 'c' } },
+          { data: { id: 'mid' }, classes: 'mid' },
+
+          { data: { id: 'd' } },
+
+          { data: { id: 'e' } },
+          { data: { id: 'f' } },
+
+          { data: { id: 'g' } },
+
+          { data: { id: 'h' } },
+          { data: { id: 'i' } },
+
+          { data: { id: 'j' } },
+        ],
+        edges: [
+          { data: { source: 'a', target: 'mid' } },
+          { data: { source: 'b', target: 'mid' } },
+          { data: { source: 'mid', target: 'c' } },
+
+          { data: { source: 'e', target: 'f' } },
+
+          { data: { source: 'h', target: 'i' } },
+        ]
+      }
+
     });
 
     // a, b, c; with mid in the middle
