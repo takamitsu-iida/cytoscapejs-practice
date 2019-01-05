@@ -53,7 +53,7 @@
           }
         },
         {
-          selector: 'edge',
+          selector: 'edges',
           style: {
             'curve-style': 'bezier',
             'width': 6,
