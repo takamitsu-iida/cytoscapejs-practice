@@ -4,6 +4,7 @@
 (function() {
   // このthisはグローバル空間
   this.iida = this.iida || (function() {
+
     // アプリのデータを取り込む場合、appdata配下にぶら下げる
     var appdata = {};
 
@@ -15,6 +16,7 @@
       appdata: appdata,
       heredoc: heredoc,
     };
+
   })();
   //
 })();
@@ -24,9 +26,11 @@
 //
 (function() {
 
+  // 名前空間iidaの下にmain関数を作成する
   iida.main = function() {
 
     var cy = window.cy = cytoscape({
+
       container: document.getElementById('cy'),
 
       layout: {
@@ -40,7 +44,6 @@
             'label': 'data(id)'
           }
         },
-
         {
           selector: '.mid',
           style: {
@@ -75,12 +78,6 @@
         { data: { id: 'j' } },
       ]
     });
-
-    // cy.on('automove', function( evt ){
-    // 	var target = evt.target || evt.cyTarget; // 3.x || 2.x
-    //
-    // 	console.log('automove event on %s', target.id());
-    // });
 
     // a, b, c; with mid in the middle
 

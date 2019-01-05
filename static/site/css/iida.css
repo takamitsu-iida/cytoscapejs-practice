@@ -57,7 +57,7 @@ h1 {
 
 /* 標準セレクタ終了 */
 
-/* cytoscape.jsコンテナ */
+/* cytoscape.js コンテナ用DIV */
 
 #cy {
   position: absolute;
@@ -68,3 +68,12 @@ h1 {
   z-index: 999;
 }
 
+/* cytoscape.js node, edge */
+
+edge {
+  width: 6;
+  curve-style: bezier;
+  target-arrow-shape: triangle;
+  line-color: #ffaaaa;
+  target-arrow-color: #ffaaaa;
+}
