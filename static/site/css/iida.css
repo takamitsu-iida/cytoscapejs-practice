@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* リセット開始(ブラウザのデフォルトをあてにしない) */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin-bottom: 6pt;
+}
+
+ol,ul,dl {
+  list-style-position: inside;
+}
+
+/* リセット完了 */
+
+/* 標準セレクタ開始 */
+
+body {
+  font-family: helvetica neue, helvetica, liberation sans, arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 800;
+  color: #000;
+}
+
+h1 {
+  opacity: 0.5;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* 標準セレクタ終了 */
+
+/* cytoscape.jsコンテナ */
+
+#cy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
