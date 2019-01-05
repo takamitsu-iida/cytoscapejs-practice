@@ -1,4 +1,4 @@
-/* global, cytoscape, iida */
+/* global cytoscape, iida */
 
 // グローバルに独自の名前空間を定義する
 (function() {
@@ -19,7 +19,9 @@
   //
 })();
 
+//
 // メイン関数の定義
+//
 (function() {
 
   iida.main = function() {
@@ -95,7 +97,7 @@
     cy.automove({
       nodesMatching: cy.$('#mid'),
       reposition: 'mean',
-      meanOnSelfPosition: function( node ){ return false; }
+      meanOnSelfPosition: function(){ return false; }
     });
 
     // dragging mid drags its neighbourhood with it

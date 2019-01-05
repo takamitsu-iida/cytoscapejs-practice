@@ -1,0 +1,19 @@
+{
+  "name": "cytoscapejs-practice",
+  "version": "1.0.0",
+  "description": "practice for cytoscape.js",
+  "main": "static/site/js/iida.startup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takamitsu-iida/cytoscapejs-practice.git"
+  },
+  "author": "@takamitsu-iida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takamitsu-iida/cytoscapejs-practice/issues"
+  },
+  "homepage": "https://github.com/takamitsu-iida/cytoscapejs-practice#readme"
+}
