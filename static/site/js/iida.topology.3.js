@@ -1,4 +1,4 @@
-/* global cytoscape, iida */
+/* global cytoscape, iida, tippy */
 
 (function() {
 
@@ -18,8 +18,6 @@
         animate: true
       },
 
-      boxSelectionEnabled: true,
-      autounselectify: true,
       minZoom: 1,
       maxZoom: 2,
 
@@ -95,8 +93,33 @@
           { data: { source: 'g', target: 'h' } },
         ]
       }
-
     });
+
+    var makeTippy = function (node, text) {
+      return tippy(node.popperRef(), {
+        html: (function () {
+          var div = document.createElement('div');
+
+          div.innerHTML = text;
+
+          return div;
+        })(),
+        trigger: 'manual',
+        arrow: true,
+        placement: 'bottom',
+        hideOnClick: false,
+        multiple: true,
+        sticky: true
+      }).tooltips[0];
+    };
+
+    var a = cy.getElementById('a');
+    var tippyA = makeTippy(a, 'ここから');
+    tippyA.show();
+
+    var h = cy.getElementById('h');
+    var tippyH = makeTippy(h, 'ここまで');
+    tippyH.show();
 
   };
   //
