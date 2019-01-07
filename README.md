@@ -17,3 +17,5 @@ npm install -g http-server
 # 参考
 
 <https://github.com/cytoscape/cytoscape.js>
+
+<https://github.com/jfstephe/cytoscape.js-elk>

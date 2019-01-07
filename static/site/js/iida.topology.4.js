@@ -1,4 +1,4 @@
-/* global cytoscape, iida, tippy */
+/* global cytoscape, iida */
 
 (function() {
 
@@ -14,8 +14,18 @@
         // name: 'grid',  // グリッド状にノードを配置
         // name: 'circle',  // 円状にノードを配置
         // name: 'breadthfirst',  // 上から下向きにツリー状に配置
-        name: 'klay',  // 横向きのツリー状に配置
-        animate: true
+        // name: 'klay',  // 横向きのツリー状に配置
+        name: 'elk',  // klayの後継
+        fit: true,
+        ranker: 'longest-path',
+        animate: true,
+        animationDuration: 300,
+        animationEasing: 'ease-in-out-cubic',
+        elk: {
+          'zoomToFit': true,
+          // 'algorithm': 'mrtree',  // これを指定すると上から下向きになる
+          'separateConnectedComponents': false
+        }
       },
 
       minZoom: 1,
@@ -48,7 +58,8 @@
             'padding-right': '10px',
             'text-valign': 'top',
             'text-halign': 'center',
-            'background-color': '#bbb'
+            'background-color': '#bbb',
+            'opacity': 0.5
           }
         },
         {
@@ -107,32 +118,6 @@
         ]
       }
     });
-
-    var makeTippy = function (node, text) {
-      return tippy(node.popperRef(), {
-        html: (function () {
-          var div = document.createElement('div');
-
-          div.innerHTML = text;
-
-          return div;
-        })(),
-        trigger: 'manual',
-        arrow: true,
-        placement: 'bottom',
-        hideOnClick: false,
-        multiple: true,
-        sticky: true
-      }).tooltips[0];
-    };
-
-    var a = cy.getElementById('a');
-    var tippyA = makeTippy(a, 'ここから');
-    tippyA.show();
-
-    var h = cy.getElementById('h');
-    var tippyH = makeTippy(h, 'ここまで');
-    tippyH.show();
 
   };
   //
