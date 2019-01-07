@@ -1,5 +1,8 @@
 /* global cytoscape, iida */
 
+// elkjsの例
+// https://github.com/OpenKieler/elkjs
+
 (function() {
 
   // iida.の下にcytoscapeを走らせる関数を作成する
@@ -17,6 +20,7 @@
         // name: 'klay',  // 横向きのツリー状に配置
         name: 'elk',  // klayの後継
         fit: true,
+        padding: 20,
         ranker: 'longest-path',
         animate: true,
         animationDuration: 300,
@@ -24,12 +28,13 @@
         elk: {
           'zoomToFit': true,
           // 'algorithm': 'mrtree',  // これを指定すると上から下向きになる
+          'algorithm': 'layered',
           'separateConnectedComponents': false
         }
       },
 
       minZoom: 1,
-      maxZoom: 2,
+      maxZoom: 3,
 
       boxSelectionEnabled: false,
       autounselectify: true,
@@ -66,7 +71,8 @@
           selector: 'edge',
           style: {
             'curve-style': 'bezier',
-            'width': 3,
+            // 'curve-style': 'segments',
+            'width': 2,
             'target-arrow-shape': 'triangle',
             'line-color': '#dd4de2',
             'target-arrow-color': '#dd4de2',
@@ -116,9 +122,10 @@
           { data: { source: 'f', target: 'h' } },
           { data: { source: 'g', target: 'h' } },
         ]
-      }
-    });
+      },
 
+
+    });
   };
   //
 })();

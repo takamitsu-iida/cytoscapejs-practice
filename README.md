@@ -19,3 +19,4 @@ npm install -g http-server
 <https://github.com/cytoscape/cytoscape.js>
 
 <https://github.com/jfstephe/cytoscape.js-elk>
+<https://github.com/OpenKieler/elkjs>
