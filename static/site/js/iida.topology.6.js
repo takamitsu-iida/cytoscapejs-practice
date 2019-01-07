@@ -74,7 +74,8 @@
       // name: 'circle',  // 円状にノードを配置
       // name: 'breadthfirst',  // 上から下向きにツリー状に配置
       // name: 'klay',  // 横向きのツリー状に配置
-      name: 'elk',  // klayの後継
+      // name: 'elk',  // klayの後継
+      name: 'cola',
       fit: true,
       padding: 20,
       ranker: 'longest-path',

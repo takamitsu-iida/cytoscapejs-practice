@@ -2,7 +2,22 @@
 
 ## ライブデモ(github pages)
 
-<https://takamitsu-iida.github.io/cytoscapejs-practice/index.html>
+練習１．
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.1.html>
+
+練習２．
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.2.html>
+
+練習３．
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.3.html>
+
+練習４．
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.4.html>
+
+練習５．
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.5.html>
+
+
 
 ## ローカルでの実行方法
 
