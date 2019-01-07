@@ -75,7 +75,8 @@
       // name: 'breadthfirst',  // 上から下向きにツリー状に配置
       // name: 'klay',  // 横向きのツリー状に配置
       // name: 'elk',  // klayの後継
-      name: 'cola',  // cola.jsを利用
+      // name: 'cola',  // cola.jsを利用
+      name: 'dagre',
     };
 
     var elements = {
