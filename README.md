@@ -25,6 +25,20 @@
 
 elkを使いこなすといいのかもしれない。
 
+## pan-zoom
+
+便利。
+
+jqueryとfont-awesome4が必要。
+
+<https://github.com/cytoscape/cytoscape.js-panzoom>
+
+
+
+
+
+
+
 ## ローカルでの実行方法
 
 index.htmlのある場所に行き、http-serverコマンドでサーバを起動して、<http://127.0.0.1:8080/>にアクセスする。
