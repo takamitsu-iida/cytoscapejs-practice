@@ -23,7 +23,10 @@
 練習７．dagre・・・ダメ
 <https://takamitsu-iida.github.io/cytoscapejs-practice/index.7.html>
 
-elkを使いこなすといいのかもしれない。
+練習８．cose-bilkent・・・良い。でも何で下から上に向かって伸びてくのかな？
+<https://takamitsu-iida.github.io/cytoscapejs-practice/index.8.html>
+
+線形ならelkを使い、compound主体ならcose-bilkentがいいと思う。
 
 ## pan-zoom
 
