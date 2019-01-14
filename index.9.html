@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>cytoscape.jsの練習</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1"/>
+
+    <!-- IE9以降で正しく機能するようにする -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- スタイルシートをインクルード -->
+    <link rel="stylesheet" type="text/css" href="./static/site/css/iida.bootstrap.css" />
+
+    <!-- font-awesome-4.7.0をインクルード。version5は使えないので要注意 -->
+    <link rel="stylesheet" type="text/css" href="./static/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <!-- jqueryをインクルード　-->
+    <script type="text/javascript" src="./static/jquery/jquery.min.js"></script>
+
+    <!-- jquery.qtipをインクルード　-->
+    <link rel="stylesheet" type="text/css" href="./static/jquery/jquery.qtip.css" />
+    <script type="text/javascript" src="./static/jquery/jquery.qtip.js"></script>
+
+    <!-- bootstrapをインクルード -->
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="./static/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- cytoscape.jsをインクルード -->
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape.min.js"></script>
+
+    <!-- cytoscape-automove.jsをインクルード -->
+    <!-- topology.1.js topology.2.jsで必要 -->
+    <!--
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-automove.js"></script>
+    -->
+
+    <!-- cytoscape-klay.jsをインクルード -->
+    <!-- topology.3.jsで必要 -->
+    <!--
+    <script type="text/javascript" src="./static/cytoscape.js/klay.js"></script>
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-klay.js"></script>
+    -->
+
+    <!-- cytoscape-popper.jsとtippyをインクルード -->
+    <!-- topology.3.jsで必要 -->
+    <!--
+    <script type="text/javascript" src='./static/cytoscape.js/popper.js'></script>
+    <script type="text/javascript" src='./static/cytoscape.js/cytoscape-popper.js'></script>
+    <script type="text/javascript" src='./static/tippy/tippy.all.js'></script>
+    <link rel="stylesheet" href="./static/tippy/tippy.css" type="text/css">
+    -->
+
+    <!-- cytoscape-elk.jsをインクルード -->
+    <!-- topology.4.js topology.5.jsで必要 -->
+    <script type="text/javascript" src="./static/cytoscape.js/elk.bundled.js"></script>
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-elk.js"></script>
+
+    <!-- cytoscape-cola.jsをインクルード -->
+    <!-- topology.6.jsで必要 -->
+    <!--
+    <script type="text/javascript" src="./static/cytoscape.js/cola.min.js"></script>
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-cola.js"></script>
+    -->
+
+    <!-- cytoscape-dagre.jsをインクルード -->
+    <!-- topology.7.jsで必要 -->
+    <!--
+    <script type="text/javascript" src="./static/cytoscape.js/dagre.js"></script>
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-dagre.js"></script>
+    -->
+
+    <!-- cytoscape-panzoom.jsをインクルード -->
+    <!-- topology.8.jsで必要 -->
+    <link rel="stylesheet" type="text/css" href="./static/cytoscape.js/cytoscape.js-panzoom.css" />
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-panzoom.js"></script>
+
+    <!-- cytoscape-cose-bilkent.jsをインクルード -->
+    <script type="text/javascript" src="./static/cytoscape.js/cytoscape-cose-bilkent.js"></script>
+
+
+    <!-- iida.startup.jsをインクルード -->
+    <script type="text/javascript" src="./static/site/js/iida.startup.js"></script>
+
+    <!-- iida.topology.?.jsをインクルード -->
+    <!--
+    <script type="text/javascript" src="./static/site/js/iida.topology.1.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.2.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.3.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.4.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.5.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.6.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.7.js"></script>
+    <script type="text/javascript" src="./static/site/js/iida.topology.8.js"></script>
+    -->
+    <script type="text/javascript" src="./static/site/js/iida.topology.9.js"></script>
+
+  </head>
+
+  <body>
+
+    <main role="main" class="flex-shrink-0">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12" style="background: gray">
+            <p> cytoscape.js</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- graph : start -->
+          <div class="col-md-12" id="cy-container">
+            <div id="cy"></div>
+          </div>
+          <!-- graph : end -->
+        </div>
+      </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", iida.main)
+  </script>
+
+</html>
