@@ -26,7 +26,7 @@
 練習８．cose-bilkent・・・良い。でも何で下から上に向かって伸びてくのかな？
 <https://takamitsu-iida.github.io/cytoscapejs-practice/index.8.html>
 
-練習９．bootstrapでレイアウトした中にグラフを入れる
+練習９．bootstrapでレイアウトした中にグラフを入れる・・・左右のスペースがもったいない。
 <https://takamitsu-iida.github.io/cytoscapejs-practice/index.9.html>
 
 ## pan-zoom
@@ -36,10 +36,6 @@
 jqueryとfont-awesome4が必要。
 
 <https://github.com/cytoscape/cytoscape.js-panzoom>
-
-
-
-
 
 
 
