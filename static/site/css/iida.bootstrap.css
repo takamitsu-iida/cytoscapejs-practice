@@ -82,5 +82,5 @@ main > .container {
   width: 100%;
   /* 高さは絶対値がでるようにしないとcytoscapeが動かないのでビューポートの高さを基準に計算する */
   height: calc(100vh - 60px);
-  background:yellow;
+  background: lightcyan;
 }
